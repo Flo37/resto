@@ -26,7 +26,7 @@ const Resto = () => {
     // ) 
             .slice(0,24)
         .map(meal=>
-        <li><Menu key={meal.id} meal={meal}/></li>
+        <li className='list_container' ><Menu key={meal.idMeal} meal={meal}/></li>
                 )}
             </ul>
             </div>
