@@ -21,11 +21,10 @@ const Resto = () => {
             <input type="text" placeholder='meal...' onChange={e=>setSearch(e.target.value)}/>
 
             <ul>
-        {data
+        {data && data
         // .filter((meal)=>meal.strMeal.toLocaleLowerCase().includes(search)  
     // ) 
-      
-    
+            .slice(0,24)
         .map(meal=>
         <li><Menu key={meal.id} meal={meal}/></li>
                 )}
