@@ -1,0 +1,17 @@
+.nav{
+    display: flex;
+    a{
+        text-decoration: none;
+        li{
+            list-style: none;
+            margin:15px;
+            font-size: 1.5rem;
+            transition: .5s;
+            
+            
+            &:hover{
+                border-bottom:2px solid rgb(255, 123, 0);
+            }
+        }
+    }
+}

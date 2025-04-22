@@ -1,0 +1,36 @@
+.comment{
+    width: 80%;
+    margin: 20px auto;
+    border: 1px solid rgb(25, 152, 156);
+    padding: 1rem;
+    border-radius: 15px 5px 75px 5px;
+    .header{
+        display: flex;
+        justify-content: space-around;
+        h2{
+            margin:0 0 10px 0;
+        }
+        span{
+            margin-top: 10px;
+        }
+    }
+    .buttons{
+        width: 20%;
+        margin-left: auto;
+        button{
+            padding: .2em 1em;
+            margin: 20px 0 0 5px;
+            background: deepskyblue;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: .5s;
+            &:hover{
+                background: lightskyblue;
+            }
+        }
+        .sec_btn{
+            border-radius: 4px 10px 25px 4px;
+        }
+    }
+}

@@ -1,0 +1,72 @@
+.resto{
+    text-align: center;
+    .header{
+        text-transform: uppercase;
+        word-spacing: 10px;
+        &::first-letter{
+            color: tomato;
+        }
+    }
+    input[type='text']{
+        margin-top: 15px;
+        font-size: 1.2rem;
+        border: none;
+        background: rgba(57, 47, 79, 0.267);
+        color: rgb(255, 255, 255);
+        padding: 0.2rem;
+        border-radius: 5px;
+        outline: 2px solid lightblue;
+    }
+    li{
+        list-style: none;
+        margin: 0 0 15px 0;
+        font-weight: 700;
+        font-size: 1.2rem;
+        color: rgb(160, 29, 29);
+    }
+    em{
+        color: green;
+    }
+    h3{
+        color: rgb(18, 147, 170);
+        margin: 20px;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.199);
+    }
+    a{
+        text-decoration: none;
+        font-size: .8rem;
+        background: darkgoldenrod;
+        h1{
+            color: white;
+            background: darkgoldenrod;
+            border-radius: 5px;
+            &:hover{
+                background: lightcoral;
+            }
+        }
+    }
+    img{
+        margin-top: 10px;
+        border-radius: 5px;
+        box-shadow: 1px 0 4px 0 rgb(38, 107, 101);
+        width: 160px;
+        height: 160px;
+        object-fit: cover;
+    }
+    i{
+        font-size: 1.2rem;
+        line-height: 35px;
+        color: red;
+    }
+    width: 85%;
+    margin: 0 auto;
+    ul{
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit ,minmax(150px,1fr));
+        gap: 15px;
+        background: rgb(202, 212, 212);
+        padding: 2rem;
+        border-radius: 5px;
+    }
+}
