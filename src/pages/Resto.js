@@ -7,10 +7,10 @@ const Resto = () => {
     const [data,setData]=useState([])
     const[search,setSearch]=useState('')
     useEffect(()=>{
-        axios.get('https://www.themealdb.com/api/json/v1/1/search.php?s=')
+        axios.get('https://www.themealdb.com/api/json/v1/1/search.php?s='+ search)
         .then((res)=>setData(res.data.meals))
 
-    },[])
+    },[search])
     
     return (
         <div >
@@ -22,8 +22,8 @@ const Resto = () => {
 
             <ul>
         {data
-        .filter((meal)=>meal.strMeal.toLocaleLowerCase().includes(search)  
-    ) 
+        // .filter((meal)=>meal.strMeal.toLocaleLowerCase().includes(search)  
+    // ) 
       
     
         .map(meal=>
